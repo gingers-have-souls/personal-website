@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+	margin: 0;
+	font-family: 'Fira Code', monospace;
+}
+
+.container {
+	text-align: center;
+	padding: 0.8em 1.2em;
+}
+
+.logo {
+	height: 40px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header svg {
+	height: 40px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ul {
+	position: fixed;
+	height: 100%;
+	width: min(50%, 15em);
+	top: 0;
+	right: 0;
+	text-align: left;
+	padding-top: 0.8em;
+	padding-right: 1.2em;
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	padding: 1em 2em;
+}
+
+a {
+	text-decoration: none;
+}
+
+.exit-btn {
+	text-align: right;
+}
+
+.menu-hide {
+	display: none;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+h3 {
+	font-weight: bold;
+}
+
+p {
+	font-weight: normal;
+	width: min(64em ,100%);
+	margin: 0 auto;
+}
+
+.biglist li {
+	width: min(32em, 100%);
+	margin: 2em auto;
+}
+
+.biglist li svg {
+	width: 7em;
+}
+.footer-links li {
+	margin: 1em;
+}
+
+@media only screen and (min-width: 850px) {
+	.biglist {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.biglist li {
+		margin: 0 1em;
+	}
+
+	.hide-desktop {
+		display: none;
+	}
+
+	.show-desktop {
+		display: block;
+	}
+
+	nav ul {
+		position: inherit;
+		width: auto;
+		height: auto;
+		background: none;
+		padding: 0;
+		text-align: center;
+	}
+
+	nav ul li {
+		float: left;
+	}
+
+	nav ul li a {
+		width: auto;
+		padding: 0;
+		margin: 1em 2em;
+	}
+}

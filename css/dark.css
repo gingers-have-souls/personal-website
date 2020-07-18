@@ -1,0 +1,46 @@
+body {
+	background-color: #282C34;
+}
+
+nav ul {
+	background-color: rgb(92, 99, 112, 0.75);
+}
+
+nav ul li a {
+	background-color: rgba(0, 0, 0, 0.75);
+}
+
+a:link {
+	color: #61AFEF;
+}
+
+a:visited {
+	color: #61AFEF;
+}
+
+h1 {
+	color: #E5C07B;
+}
+
+h2 {
+	color: #E06C75;
+}
+
+h3 {
+	color: #98C379;
+}
+
+p {
+	color: #C678DD;
+}
+
+svg {
+	fill: #ABB2BF;
+	stroke: #ABB2BF;
+}
+
+@media only screen and (min-width: 850px) {
+	nav ul li a {
+		background-color: inherit;
+	}
+}

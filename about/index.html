@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Home</title>
+		<link rel="icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="stylesheet" href="/css/dark.css">
+		<script src="/js/menu.js" defer></script>
+	</head>
+	<body>
+		<script src="/js/header.js"></script>
+
+		<div class="container">
+			<h1>About</h1>
+		</div>
+
+		<div class="container">
+			<h2>Purpose</h2>
+			<p>There are a couple of reasons I decided to make this website. Below are a few:</p>
+			<h3>Learning web hosting and server stuff</h3>
+			<p>Sometime around the fall of 2019, I decided to try out Linux (eventually settling on the <a target="_blank" rel="noopener noreferrer" href="https://manjaro.org">Manjaro</a> distribution). I grew to really like it for its customizability, programmer-friendliness, and command line. As a result, I became increasingly interested in running Linux in a server setting, both as a challenge to myself and to learn more about it. Ultimately, I decided that setting up a web server would be a pretty cool project, so that's what I decided to do.</p>
+			<h3>Learning front-end web development</h3>
+			<p>Prior to making this website, I did not know much about front-end web development. Building this website has not only provided me with experience in doing so, but it has also opened my eyes to the different ways that one can build a website and the various things one must take into consideration when doing so. I will likely continue using this site to display the results of my front-end development experiments.</p>
+			<h3>Making blog posts</h3>
+			<p>The final reason I decided to make a website is to publish written tutorials/guides about software or other topics that interest me. This would include things like material for a Linux club I am thinking about starting at my school next year, or a written complement to a YouTube video.</p>
+			<h2>How I hosted this website</h2>
+			<p>This website is hosted entirely on Google Cloud's <a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/free/docs/gcp-free-tier">free tier</a>, on an f1-micro VM instance in Iowa. I used to use <a target="_blank" rel="noopener noreferrer" href="https://www.debian.org">Debian</a> as the VM's operating system but I later switched to Google's <a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/container-optimized-os">Container-Optimized OS</a> since I found Debian a little too bloated. The only disadvantage is that there is no package manager in Container-Optimized OS so everything needs to be run in docker containers. What the server is running is loosely based off of <a target="_blank" rel="noopener noreferrer" href="https://github.com/gingers-have-souls/docker-nginx-webdav-fail2ban">this image</a> I made, thus this website runs on <a target="_blank" rel="noopener noreferrer" href="https://www.nginx.com">NGINX</a>. The SSL certificates (for HTTPS) are taken care of by the <a target="_blank" rel="noopener noreferrer" href="https://www.eff.org">EFF's</a> <a target="_blank" rel="noopener noreferrer" href="https://certbot.eff.org">Certbot</a>.</p>
+			<h2>How I designed this website</h2>
+			<p>This website was designed using vanilla HTML, CSS, and JavaScript. The font used is <a target="_blank" rel="noopener noreferrer" href="https://fonts.google.com/specimen/Fira+Code">Fira Code</a>, and most of the icons were found on <a target="_blank" rel="noopener noreferrer" href="https://ionicons.com">Ionicons</a> and modified to work as HTML &lt;svg&gt; elements. The GNU head on the home page was found on the <a target="_blank" rel="noopener noreferrer" href="https://www.gnu.org/graphics/gnusvgart.html">GNU website</a>, created by <a target="_blank" rel="noopener noreferrer" href="http://wiki.colivre.net/Aurium">Aurelio A. Heckert</a> <a href="mailto:aurium@gmail.com">&lt;aurium@gmail.com&gt;</a>, and released under the <a href="https://directory.fsf.org/wiki/License:Free-Art-L-v1.3">Free Art License</a>.</p>
+		</div>
+
+		<script src="/js/footer.js"></script>
+	</body>
+</html>
