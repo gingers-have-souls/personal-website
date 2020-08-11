@@ -1,5 +1,10 @@
 body {
 	background-color: #282C34;
+	color: #ABB2BF;
+}
+
+.card {
+	border: 2px solid #ABB2BF;
 }
 
 nav ul {
@@ -32,6 +37,19 @@ h3 {
 
 p {
 	color: #C678DD;
+}
+
+button {
+	background-color: #98C379;
+	color: #000;
+}
+
+input {
+	border: 1px solid #ABB2BF;
+}
+
+button:active {
+	color: #FFF;
 }
 
 svg {

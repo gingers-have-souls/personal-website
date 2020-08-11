@@ -10,6 +10,33 @@ body {
 	padding: 0.8em 1.2em;
 }
 
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
+	justify-content: center;
+	width: min(100%, 125em);
+	margin: auto;
+}
+
+.grid * {
+	flex: 0.25 0 min(90%, 23em);
+}
+
+.card {
+	border-radius: 30px;
+	padding: 20px;
+}
+
+.stay-skinny {
+	width: min(64em, 100%);
+	margin: auto;
+}
+
+.text-left {
+	text-align: left;
+}
+
 .logo {
 	height: 40px;
 }
@@ -74,7 +101,31 @@ h3 {
 p {
 	font-weight: normal;
 	width: min(64em ,100%);
-	margin: 0 auto;
+	margin: 1em auto;
+}
+
+pre {
+	white-space: break-spaces;
+	word-wrap: break-word;
+}
+
+button {
+	border: none;
+	padding: 0.25em 1em;
+	margin: 0.25em;
+	text-decoration: none;
+	outline: none;
+	font-size: 1.17em;
+	font-family: inherit;
+}
+
+input {
+	font-size: inherit;
+	font-family: inherit;
+	outline: none;
+	background-color: inherit;
+	color: inherit;
+	max-width: 100%;
 }
 
 .biglist li {
