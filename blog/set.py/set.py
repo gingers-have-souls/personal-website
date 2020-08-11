@@ -30,7 +30,7 @@ cards = []
 for i in range(numOfCards):
     cards.append(input("card " + str(i+1) + ": ").split())
     while len(cards[i]) != FEATURES:
-        print("You put", len(cards[i]), "differences, but you need", FEATURES)
+        print("You put", len(cards[i]), "features, but you need", FEATURES)
         cards[i] = input("card " + str(i+1) + ": ").split()
 
 find_match(cards, [])
